@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="demo.myself.com.androidlearndemo.Activity.TableLayoutActivity">
+<TableLayout
+    android:id="@+id/tab1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:shrinkColumns="1"
+    android:stretchColumns="2">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="独自一行的button"/>
+    <TableRow>
+        <Button
+            android:text="一般按钮"/>
+        <Button android:text="收缩的按钮"/>
+        <Button
+            android:text="拉伸的按钮"/>
+    </TableRow>
+</TableLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tab1"
+        android:shrinkColumns="1"
+        android:stretchColumns="2"
+       >
+        <Button
+            android:text="独自一行的button"/>
+        <TableRow
+            >
+            <Button
+                android:text="一般"/>
+            <Button
+                android:text="收缩的"/>
+            <Button android:text="拉伸的"/>
+        </TableRow>
+        <Button
+            android:text="独自一行的button"/>
+        <TableRow>
+            <Button
+                android:text="一般"/>
+            <Button
+                android:text="收缩"/>
+            <Button />
+        </TableRow>
+        <TableRow>
+            <Button />
+            <Button />
+        </TableRow>
+    </TableLayout>
+</android.support.constraint.ConstraintLayout>

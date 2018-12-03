@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="demo.myself.com.androidlearndemo.MainActivity">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FollowingBoll"
+        android:id="@+id/followboll_id"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/followboll_id"
+        android:text="TableLayout"
+        android:id="@+id/tablelaout_id"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FrameLayout"
+        app:layout_constraintTop_toBottomOf="@id/tablelaout_id"
+        android:id="@+id/framelayout_id"/>
+</android.support.constraint.ConstraintLayout>
